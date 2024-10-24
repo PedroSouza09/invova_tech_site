@@ -11,13 +11,14 @@ body {
 }
 
 header {
-  width: 100%;
+  width: 100vw;
   display: flex;
   padding: 5px 10px;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
   border-bottom: 1px solid #808080;
+  position: fixed;
 }
 
 .name {
@@ -49,8 +50,7 @@ header {
 .box-perfil {
   width: 325px;
   height: 120px;
-  /* atviva -> flex */
-  display: none;
+  display: flex;
   gap: 5px;
   justify-content: space-between;
   align-items: center;
@@ -71,7 +71,7 @@ header {
   height: 50px;
 }
 
-.opcoes ul li{
+.opcoes ul li {
   list-style: none;
 }
 
@@ -80,7 +80,33 @@ header {
 }
 
 .container {
-  display: flex; /* Habilita o Flexbox */
-  
-  height: 100vh; /* Define a altura do container para 100% da altura da viewport (tela) */
+  /* atviva -> flex */
+  display: none;
+  height: 100vh;
+  z-index: 99;
 }
+
+main{
+  width: 100vw;
+  height: 100vh;
+  padding: 65px 10px;
+  
+  /* Imagem de fundo com gradiente */
+  background: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #54c67a), url('./assets/bg.png');
+  
+  background-repeat: no-repeat;
+  background-size: cover;     
+  background-position: center; 
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main h1 {
+  color: #031c28;
+  text-align: center;
+}
+
+
