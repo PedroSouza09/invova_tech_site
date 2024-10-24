@@ -47,12 +47,23 @@ header {
 }
 
 .box-perfil {
-  width: 320px;
-  height: 160px;
-  display: flex;
+  width: 325px;
+  height: 120px;
+  /* atviva -> flex */
+  display: none;
+  gap: 5px;
   justify-content: space-between;
   align-items: center;
-  background-color: #808080;
+  background-color: #fff;
+  padding: 4px;
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  border: 1px solid #808080;
+  border-top-right-radius: 0;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .img-pefil {
@@ -60,4 +71,16 @@ header {
   height: 50px;
 }
 
+.opcoes ul li{
+  list-style: none;
+}
 
+.opcoes ul li a {
+  color: #000;
+}
+
+.container {
+  display: flex; /* Habilita o Flexbox */
+  
+  height: 100vh; /* Define a altura do container para 100% da altura da viewport (tela) */
+}
