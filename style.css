@@ -81,7 +81,7 @@ header {
 
 .container {
   /* atviva -> flex */
-  display: none;
+  display: flex;
   height: 100vh;
   z-index: 99;
 }
